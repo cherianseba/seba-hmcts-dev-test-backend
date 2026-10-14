@@ -3,6 +3,8 @@
 !gradle/wrapper/gradle-wrapper.jar
 *.class
 bin/main/application.yaml
+hmcts-tasks.mv.db
+hmcts-tasks.trace.db
 
 ### STS ###
 .apt_generated

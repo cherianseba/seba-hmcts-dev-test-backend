@@ -26,6 +26,15 @@ spring:
     import: "optional:configtree:/mnt/secrets/test/"
   application:
     name: Dev Test
+  datasource:
+    url: jdbc:h2:file:./hmcts-tasks;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
 #  datasource:
 #    driver-class-name: org.postgresql.Driver
 #    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}${DB_OPTIONS:}
